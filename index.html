@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 58%;
+            /* background: url('https://static8.depositphotos.com/1018531/996/i/600/depositphotos_9963051-stock-photo-mountain-range-and-lake-wakatipu.jpg') no-repeat; */
+            background: url('./bg2.jpg') no-repeat;
+            /* background-size: cover; */
+            background-position: center;
+            
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* background: red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+        .logo {
+            font-size: 2em;
+            color: #fff;
+            user-select: none;
+        }
+        .wrapper{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .wrapper .form-box{
+            width: 100%;
+            padding: 40px;
+        }
+        .form-box h2{
+            font-size: 2rem;
+            color: #162938;
+            text-align: center;
+        }
+        .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px solid #162938;
+            margin: 30px 0;
+        }
+        .input-box label{
+            position: absolute;
+            top:50%;
+            left: 5px;
+            transform: translateY((-50%));
+            font-size: 1em;
+            color: #162938;
+            font-weight: 500;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        .input-box input:focus~label,
+        .input-box input:valid~label{
+            top: -5px;
+        }
+        .input-box input{
+            position: absolute;
+            top: 38%;
+            bottom: 5px;
+            width: 100%;
+            height: 80%;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            color: #162938;
+            font-weight: 600;
+            padding: 0 5px 0 0px;
+            padding-bottom: -10px;
+        }
+        .btn {
+            width: 100%;
+            height: 45px;
+            background-color: #162938;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            color: #fff;
+            font-weight: 500;
+        }
+        .container{
+            display: flex;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container .section2{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./bg1.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: whitesmoke;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        #sec21 img{
+            width: 20%;
+        }
+        #sec21{
+            width: 500px;
+            text-align: center;
+        }
+        .section1 header img{
+            width: 70px;
+            margin: 10px;
+        }
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <header>
+                <img src="./logo1.png" alt="">
+            </header>
+            <div class="wrapper">
+                <div class="form-box login">
+                    <h2>Rishabh</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div id="sec21">
+                <img src="./logo1.png" alt="">
+                <h1>City Center<span>Hospital</span></h1>
+                <h2>Powered by ABCD and EFGH</h2>
+            </div>
+            <h2>
+                India's Integreted Healthcare System
+            </h2>
+        </div>
+        
+    </div>
+</body>
+</html>
